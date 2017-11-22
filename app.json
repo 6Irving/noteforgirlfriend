@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/thermometer/thermometer",
+    "pages/bigaunt/bigaunt",
+    "pages/thermometer_record/thermometer_record"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "体温",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#d4237a",
+    "backgroundColor": "#fff",
+    "borderStyle": "#707070",
+    "list": [{
+      "pagePath": "pages/thermometer/thermometer",
+      "text": "体温",
+      "iconPath": "images/thermometer-default.png",
+      "selectedIconPath":"images/thermometer-active.png"
+    },
+    {
+      "pagePath": "pages/bigaunt/bigaunt",
+      "text": "大姨妈",
+      "iconPath": "images/bigaunt-default.png",
+      "selectedIconPath": "images/bigaunt-active.png"
+    }]
+  }
+}

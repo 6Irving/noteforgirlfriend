@@ -1,0 +1,31 @@
+.menu{
+  width: 90%;
+  margin: 50rpx auto;
+  border: 1rpx solid #f23b3b;
+  border-radius: 8rpx;
+}
+.menu-bar{
+  display: inline-block;
+  width: 25%;
+  height: 55rpx;
+  line-height: 55rpx;
+  box-sizing: border-box;
+  border-right: 1rpx solid #f23b3b;
+  text-align: center;
+}
+.menu-bar-active{
+  background-color: #f23b3b; 
+  color: #fff;
+}
+.menu-bar:last-child{
+  border: none;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+.canvas{
+  width: 700rpx;
+  height: 500rpx;
+}

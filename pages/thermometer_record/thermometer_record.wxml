@@ -1,0 +1,6 @@
+<view class='menu'>
+  <text wx:for="{{tabList}}" wx:key class="menu-bar {{activeTabIndex==item.id?'menu-bar-active':''}}" bindtap='tabtap' data-index="{{item.id}}">{{item.name}}</text>
+</view>
+<view class="container">
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>

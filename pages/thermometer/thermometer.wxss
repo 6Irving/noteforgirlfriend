@@ -1,0 +1,4 @@
+/* pages/thermometer/thermometer.wxss */
+.warning{
+  color: #f23b3b;
+}

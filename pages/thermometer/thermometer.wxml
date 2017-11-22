@@ -1,0 +1,19 @@
+<!--pages/thermometer/thermometer.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="section">
+    <input class="ipt {{bAbove365?'warning':''}}" bindinput='getInputVal' bindconfirm='confirmInput' type="digit" maxlength='4' placeholder='快记录一下今日的体温吧~' placeholder-class='input-placeholder'></input>
+  </view>
+  <view class="section">
+    <button class="btn" type='primary' disabled='{{!hasUserInfo}}' bindtap='submit'>提交</button>
+    <button class="btn" type='primary' disabled='{{!hasUserInfo}}' bindtap='check'>查询</button>
+    <!-- <button class="btn" type='primary' disabled='{{!hasUserInfo}}' bindtap='del'>删除记录</button> -->
+  </view>
+</view>
+
